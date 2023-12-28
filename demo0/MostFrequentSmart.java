@@ -1,3 +1,5 @@
+package demo0;
+
 /*
  * MostFrequentSmart.java
  * Author: CS 151 staff

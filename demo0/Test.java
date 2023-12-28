@@ -1,3 +1,5 @@
+package demo0;
+
 public static void main(String[] args) throws FileNotFoundException{ 
     List<String> words = new ArrayList<String>();
     
