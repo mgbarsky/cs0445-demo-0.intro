@@ -5,20 +5,20 @@ import java.io.*;
 /*
  * MostFrequent.java
  * Author: MBarsky
- * Fall 2022
- * Finds the word with max frequency by multiple scans of a file data
+ * Fall 2025
+ * Finds the word with max frequency by scanning lists
  */
 public class MostFrequent {
-    public static void count(List<String> words) {           
+    public static void count(List<String> allWords) {           
         int maxCount = 0;
         String maxWord = null;
         
-        for(int i=0; i < words.size(); i++) {
-            String currentWord = words.get(i);
+        for(int i=0; i < allWords.size(); i++) {
+            String currentWord = allWords.get(i);
             int count = 1;
             
-            for(int j=i+1; j < words.size(); j++) {
-                String w = words.get(j);
+            for(int j=i+1; j < allWords.size(); j++) {
+                String w = allWords.get(j);
                 if (w.equals(currentWord)) {
                     count ++;
                 }
@@ -30,7 +30,7 @@ public class MostFrequent {
             }    
         }
         
-        System.out.println("The most frequent word is '"+maxWord+"' which occurs "+maxCount+" times.");      
-       
+        System.out.println("\nCounting using two loops over list");
+        System.out.println("The most frequent word is '"+maxWord+"' which occurs "+maxCount+" times.");  
     }
 }
