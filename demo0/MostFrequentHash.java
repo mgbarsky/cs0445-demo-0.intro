@@ -20,7 +20,7 @@ package demo0;
          for(int i=0; i < allWords.size(); i++) {
              String currentWord = allWords.get(i);
              Integer count = dictionary.getOrDefault(currentWord, 0);
-             
+             count ++;
              dictionary.put(currentWord, count);
              
              if (count > maxCount) {

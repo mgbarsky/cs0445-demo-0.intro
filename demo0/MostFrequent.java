@@ -6,7 +6,7 @@ import java.io.*;
  * MostFrequent.java
  * Author: MBarsky
  * Fall 2025
- * Finds the word with max frequency by scanning lists
+ * Finds the word with max frequency by scanning list of words
  */
 public class MostFrequent {
     public static void count(List<String> allWords) {           
